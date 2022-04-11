@@ -41,12 +41,13 @@ h1 span{
 .botonera {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .box{
     background-color:#FF8C32;
     border-radius: 5px;
     box-shadow: -2px 2px 5px #ffb37a;
+    
 
 }
 .box:hover{
