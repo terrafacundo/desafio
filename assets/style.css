@@ -1,0 +1,114 @@
+*{
+    font-family:  'Bebas Neue', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin:0%;
+    padding: 0;
+    background-color: #DDDDDD;
+}
+header{
+    background-color: #06113C;
+}
+
+.logo {
+    animation: desplazamiento 800ms;
+}
+
+@keyframes desplazamiento{
+    0%{
+        transform:translateX(-200px);
+    }
+    25%{
+        transform:translateX(-50)
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+h1{
+    font-size:1.75rem;
+    padding-left:10vw;
+    color: #DDDDDD;
+}
+h1 span{
+    color:#FF8C32;
+}
+
+
+/*botones estilo, hover, active y keyframe*/
+.botonera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box{
+    background-color:#FF8C32;
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px #ffb37a;
+
+}
+.box:hover{
+    background-color:#FF8C32;
+    border-radius: 3px;
+    animation: subida 2s infinite;
+}
+.textos-box{
+    font-size: 1rem;
+    padding: 0.125vw 1vw 0.125vw 1vw;
+}
+.textos-box:active{
+    color: #b96423;
+}
+@keyframes subida {
+    0%{
+        transform:scale(1,1);
+    }
+    50%{
+        transform:scale(1.05,1.05);
+        box-shadow: -2px 2px 10px #fdc295;
+        background-color:#f8984f;
+    }
+    100%{
+        transform:scale(1,1);
+    }
+    
+}
+
+
+/* formulario de entrada*/
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formu{
+    display: flex;
+    flex-direction:column;
+    row-gap: 2vh;
+    align-items:flex-start;
+    animation: aparicion 1.25s;
+}
+@keyframes aparicion {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+.noti{
+    animation:notificacion 800ms;
+}
+@keyframes notificacion {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+    
+}
